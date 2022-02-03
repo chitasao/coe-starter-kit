@@ -24,6 +24,6 @@ stages:
       displayName: Build an image
       inputs:
         command: build
-        dockerfile: 'coe-cli/dockerfile'
+        dockerfile: '$(Build.SourcesDirectory)/coe-cli/dockerfile'
         tags: |
           $(tag)
